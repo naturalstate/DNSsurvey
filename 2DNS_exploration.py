@@ -9,7 +9,17 @@ res = dns.resolver.Resolver()
 res.nameservers = ['1.1.1.1']
 res.port = 53
 
-domain = "google.com"
+print(r"""\
+    ____  _   _______    _____                            
+   / __ \/ | / / ___/   / ___/__  ________   _____  __  __
+  / / / /  |/ /\__ \    \__ \/ / / / ___/ | / / _ \/ / / /
+ / /_/ / /|  /___/ /   ___/ / /_/ / /   | |/ /  __/ /_/ / 
+/_____/_/ |_//____/   /____/\__,_/_/    |___/\___/\__, /  
+                                                 /____/  
+
+""")
+
+domain = input("Enter the domain to scan: ")
 nums = True
 
 def ReverseDNS(ip):
